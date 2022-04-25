@@ -9,17 +9,20 @@ body{
 
 .container-slider{
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    max-height: 1000px;
     position: absolute;
+    overflow: hidden;
 }
 
 .slider{
     height: 100%;
     width: 400%;
     display: flex;
+    margin-left: -100%;
 }
 
-.sliderSection{
+.slider_Section{
     width: 100%;
 }
 
@@ -51,10 +54,12 @@ body{
 
 .btn_left{
     left: 10px;
+    position: absolute;
 }
 
 .btn_right{
     right: 10px;
+    position: absolute;
 }
 
 .bullets{
