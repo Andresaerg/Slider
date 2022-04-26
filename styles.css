@@ -10,10 +10,14 @@ body{
 .container-slider{
     width: 100%;
     height: auto;
-    max-height: 1000px;
+    max-height: 970px;
     position: absolute;
     overflow: hidden;
 }
+
+/*.container-slider:hover > .slider_btn{
+    opacity: 1;
+}*/
 
 .slider{
     height: 100%;
@@ -46,6 +50,7 @@ body{
     font-family: monospace;
     text-align: center;
     cursor: pointer;
+/*    opacity: 0; */
 }
 
 .slider_btn:hover{
@@ -55,11 +60,13 @@ body{
 .btn_left{
     left: 10px;
     position: absolute;
+    text-align: center;
 }
 
 .btn_right{
     right: 10px;
     position: absolute;
+    text-align: center;
 }
 
 .bullets{
@@ -76,6 +83,17 @@ body{
 }
 
 .bullets>li>button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+.bullets>li>input{
     display: inline-block;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.5);

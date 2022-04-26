@@ -11,7 +11,7 @@
     <div class="container-slider">
         <div class="slider" id="slider">
             <div class="slider_Section">
-                <img src="imgs/2.jpg" alt="" class="sliderImg">
+                <img src="imgs/2.jpg" alt="" class="sliderImg" id="myImage">
             </div>
             <div class="slider_Section">
                 <img src="imgs/5.JPG" alt="" class="sliderImg">
@@ -24,16 +24,26 @@
             </div>
         </div>
         <div>
-            <ul class="bullets">
-                <li><button> </button></li>
-                <li><button> </button></li>
-                <li><button> </button></li>
-                <li><button> </button></li>
+            <ul class="bullets" id="bullets">
+                <li><button id="btnB1"> </button></li>
+                <li><button id="btnB2"> </button></li>
+                <li><button id="btnB3"> </button></li>
+                <li><button id="btnB4"> </button></li>
             </ul>
         </div>
-        <div class="slider_btn btn_left container-slider">&#60;</div>
-        <div class="slider_btn btn_right">&#62;</div>
+        <div class="slider_btn btn_left" id="btn_left">&#60;</div>
+        <div class="slider_btn btn_right" id="btn_right">&#62;</div>
     </div>
     <script src="slider.js"></script>
+    <script>
+ 
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("5") || image.src.match("6") || image.src.match("8")) {
+                image.src = "imgs/2.jpg";
+            } 
+        }
+         
+        </script>
 </body>
 </html>
